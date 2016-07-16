@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,93 +18,190 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-Oi-3Cw">
-                                <rect key="frame" x="75" y="114" width="450" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-Oi-3Cw">
+                                <rect key="frame" x="80" y="114" width="88" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="i1g-qt-egk"/>
+                                    <constraint firstAttribute="width" constant="88" id="bTO-UA-oyu"/>
+                                    <constraint firstAttribute="height" constant="80" id="pkX-bl-lrV"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cityBackground"/>
+                                <state key="normal" backgroundImage="city_thumb"/>
                                 <connections>
                                     <action selector="firstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBm-oP-EhK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAI-dy-Geg">
-                                <rect key="frame" x="75" y="239" width="450" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAI-dy-Geg">
+                                <rect key="frame" x="134" y="232" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="2FZ-ks-LDZ"/>
+                                    <constraint firstAttribute="height" constant="80" id="UQF-qB-GOD"/>
+                                    <constraint firstAttribute="width" constant="80" id="pTe-ho-wc3"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="castleBackground"/>
+                                <state key="normal" backgroundImage="castle_thumb"/>
                                 <connections>
                                     <action selector="secondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmZ-IT-orU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSi-ql-3pS">
-                                <rect key="frame" x="75" y="364" width="450" height="75"/>
+                                <rect key="frame" x="80" y="342" width="88" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="3w2-6a-VoM"/>
+                                    <constraint firstAttribute="height" constant="80" id="E24-W6-e8m"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="funBackground"/>
+                                <state key="normal" backgroundImage="fun_thumb"/>
                                 <connections>
                                     <action selector="thirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eb2-fe-trL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bia-xy-M9f">
-                                <rect key="frame" x="75" y="489" width="450" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bia-xy-M9f">
+                                <rect key="frame" x="134" y="470" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="8p4-7V-hKY"/>
+                                    <constraint firstAttribute="height" constant="80" id="evt-9W-0j4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gEg-GO-8St"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="redBackground"/>
+                                <state key="normal" backgroundImage="red_thumb"/>
                                 <connections>
                                     <action selector="fourthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czq-jg-iVa"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hSi-ql-3pS" firstAttribute="top" secondItem="XAI-dy-Geg" secondAttribute="bottom" constant="50" id="2Wf-js-n00"/>
-                            <constraint firstAttribute="trailing" secondItem="hSi-ql-3pS" secondAttribute="trailing" constant="75" id="9Lt-T0-f1u"/>
-                            <constraint firstItem="bia-xy-M9f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="75" id="Ijn-1L-U89"/>
-                            <constraint firstAttribute="trailing" secondItem="31D-Oi-3Cw" secondAttribute="trailing" constant="75" id="KAK-0h-65C"/>
-                            <constraint firstAttribute="trailing" secondItem="bia-xy-M9f" secondAttribute="trailing" constant="75" id="KPK-iX-3Wx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bia-xy-M9f" secondAttribute="bottom" constant="50" id="OIo-MH-kyZ"/>
-                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="PmV-bQ-aJn"/>
-                            <constraint firstAttribute="trailing" secondItem="XAI-dy-Geg" secondAttribute="trailing" constant="75" id="jLe-f8-GK4"/>
-                            <constraint firstItem="XAI-dy-Geg" firstAttribute="top" secondItem="31D-Oi-3Cw" secondAttribute="bottom" constant="50" id="k2k-k1-E6H"/>
-                            <constraint firstItem="hSi-ql-3pS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="75" id="naF-5s-cNh"/>
-                            <constraint firstItem="bia-xy-M9f" firstAttribute="top" secondItem="hSi-ql-3pS" secondAttribute="bottom" constant="50" id="rFu-M1-lda"/>
-                            <constraint firstItem="XAI-dy-Geg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="75" id="wKT-Oe-Ya4"/>
-                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="75" id="yo8-a2-CBF"/>
+                            <constraint firstItem="XAI-dy-Geg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="232" id="1PA-O6-lmt"/>
+                            <constraint firstItem="hSi-ql-3pS" firstAttribute="top" secondItem="XAI-dy-Geg" secondAttribute="bottom" constant="30" id="2cL-Xa-FMD"/>
+                            <constraint firstItem="XAI-dy-Geg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="134" id="2iW-w8-26g"/>
+                            <constraint firstItem="XAI-dy-Geg" firstAttribute="top" secondItem="31D-Oi-3Cw" secondAttribute="bottom" constant="38" id="BvN-Cd-czO"/>
+                            <constraint firstItem="hSi-ql-3pS" firstAttribute="top" secondItem="XAI-dy-Geg" secondAttribute="bottom" constant="15" id="JNH-1E-yzr"/>
+                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="trailing" secondItem="hSi-ql-3pS" secondAttribute="trailing" id="Sha-4d-9zA"/>
+                            <constraint firstItem="bia-xy-M9f" firstAttribute="top" secondItem="hSi-ql-3pS" secondAttribute="bottom" constant="48" id="W6V-4h-Wb8"/>
+                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="iVu-9k-k4S"/>
+                            <constraint firstItem="bia-xy-M9f" firstAttribute="leading" secondItem="XAI-dy-Geg" secondAttribute="leading" id="jzB-3b-1XG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bia-xy-M9f" secondAttribute="bottom" constant="123" id="pRU-XL-H63"/>
+                            <constraint firstItem="bia-xy-M9f" firstAttribute="top" secondItem="hSi-ql-3pS" secondAttribute="bottom" constant="33" id="trt-7s-FXL"/>
+                            <constraint firstItem="XAI-dy-Geg" firstAttribute="top" secondItem="31D-Oi-3Cw" secondAttribute="bottom" constant="38" id="vy4-fs-CVx"/>
+                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="leading" secondItem="hSi-ql-3pS" secondAttribute="leading" id="w38-Q9-Cpi"/>
+                            <constraint firstItem="bia-xy-M9f" firstAttribute="trailing" secondItem="XAI-dy-Geg" secondAttribute="trailing" id="wfg-dv-bEs"/>
+                            <constraint firstItem="31D-Oi-3Cw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="z69-2k-uAh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="OIo-MH-kyZ"/>
+                                <exclude reference="z69-2k-uAh"/>
+                                <exclude reference="BvN-Cd-czO"/>
+                                <exclude reference="JNH-1E-yzr"/>
+                                <exclude reference="trt-7s-FXL"/>
+                                <exclude reference="pRU-XL-H63"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="VT6-Sb-MfM"/>
                     <connections>
-                        <segue destination="hEH-Yn-g8C" kind="show" identifier="BirthdaySegue" id="45c-7s-hvK"/>
+                        <segue destination="7Yd-UL-43l" kind="show" identifier="CameraSegue" id="kfv-36-jn9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000" y="-353"/>
+            <point key="canvasLocation" x="932" y="-353"/>
         </scene>
-        <!--Happy Birthday View Controller-->
-        <scene sceneID="qbL-Wf-PYZ">
+        <!--Camera View Controller-->
+        <scene sceneID="5P2-G6-rWd">
             <objects>
-                <viewController id="hEH-Yn-g8C" customClass="HappyBirthdayViewController" customModule="Mr_President" customModuleProvider="target" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E4U-1c-IPC">
+                <viewController id="7Yd-UL-43l" customClass="CameraViewController" customModule="Mr_President" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jwf-uD-nWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lsh-lH-O1N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AqC-D4-dav">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF8-g1-u6o">
+                                <rect key="frame" x="510" y="40" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2Sj-Wn-wqY"/>
+                                    <constraint firstAttribute="height" constant="50" id="3gq-gz-7hH"/>
+                                </constraints>
+                                <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="captureImage:" destination="7Yd-UL-43l" eventType="touchUpInside" id="BxG-sm-ZZM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-Ho-s0e">
+                                <rect key="frame" x="164" y="70" width="272" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="eXL-6Q-YGU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8G-dR-lZK">
+                                <rect key="frame" x="164" y="472" width="272" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="7Yd-UL-43l" eventType="touchUpInside" id="xd3-67-IHO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jF8-g1-u6o" secondAttribute="trailing" constant="40" id="0lP-SE-VRb"/>
+                            <constraint firstItem="bYj-Ho-s0e" firstAttribute="centerX" secondItem="AqC-D4-dav" secondAttribute="centerX" id="4eq-xd-7Eq"/>
+                            <constraint firstItem="Lsh-lH-O1N" firstAttribute="top" secondItem="j8G-dR-lZK" secondAttribute="bottom" constant="45" id="MqV-G7-iZN"/>
+                            <constraint firstItem="j8G-dR-lZK" firstAttribute="top" secondItem="bYj-Ho-s0e" secondAttribute="bottom" constant="82" id="Psd-9M-vdQ"/>
+                            <constraint firstItem="bYj-Ho-s0e" firstAttribute="leading" secondItem="j8G-dR-lZK" secondAttribute="leading" id="SQx-DY-fqp"/>
+                            <constraint firstItem="jF8-g1-u6o" firstAttribute="top" secondItem="Jwf-uD-nWi" secondAttribute="bottom" constant="20" id="VfC-wL-hPo"/>
+                            <constraint firstAttribute="trailing" secondItem="j8G-dR-lZK" secondAttribute="trailing" constant="164" id="wmu-Ji-uZP"/>
+                            <constraint firstItem="j8G-dR-lZK" firstAttribute="leading" secondItem="AqC-D4-dav" secondAttribute="leading" constant="164" id="y6X-eu-NO4"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="q3U-XL-pGj"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="birthdayImage" destination="E4U-1c-IPC" id="fwq-ZR-3PP"/>
+                        <outlet property="imageView" destination="bYj-Ho-s0e" id="pTY-L3-VOM"/>
+                        <segue destination="3Mf-gI-luc" kind="show" identifier="BirthdaySegue" id="FMz-hy-q2e"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9xy-Oa-hlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IN-3e-yWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="-346"/>
+            <point key="canvasLocation" x="1708" y="-353"/>
+        </scene>
+        <!--Birthday View Controller-->
+        <scene sceneID="3O8-SV-Jxk">
+            <objects>
+                <viewController id="3Mf-gI-luc" customClass="BirthdayViewController" customModule="Mr_President" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trp-86-sgh"/>
+                        <viewControllerLayoutGuide type="bottom" id="az2-R2-Ua3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iwo-3U-nec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="loQ-rD-SYn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="536"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-TG-8CA">
+                                <rect key="frame" x="161" y="160" width="278" height="256"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="loQ-rD-SYn" firstAttribute="leading" secondItem="iwo-3U-nec" secondAttribute="leading" id="6I0-Yd-D34"/>
+                            <constraint firstItem="uZM-TG-8CA" firstAttribute="top" secondItem="trp-86-sgh" secondAttribute="bottom" constant="140" id="WZa-Ld-tqA"/>
+                            <constraint firstItem="loQ-rD-SYn" firstAttribute="top" secondItem="trp-86-sgh" secondAttribute="bottom" id="X96-lQ-ccP"/>
+                            <constraint firstAttribute="trailing" secondItem="uZM-TG-8CA" secondAttribute="trailing" constant="161" id="XBu-tB-8DL"/>
+                            <constraint firstItem="uZM-TG-8CA" firstAttribute="leading" secondItem="iwo-3U-nec" secondAttribute="leading" constant="161" id="e6g-Uw-rwc"/>
+                            <constraint firstItem="az2-R2-Ua3" firstAttribute="top" secondItem="uZM-TG-8CA" secondAttribute="bottom" constant="140" id="lAj-0W-JLU"/>
+                            <constraint firstAttribute="trailing" secondItem="loQ-rD-SYn" secondAttribute="trailing" id="nuM-vk-E9d"/>
+                            <constraint firstItem="az2-R2-Ua3" firstAttribute="top" secondItem="loQ-rD-SYn" secondAttribute="bottom" id="yMr-i8-onN"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Lae-Dw-apd"/>
+                    <connections>
+                        <outlet property="birthdayImage" destination="loQ-rD-SYn" id="i0j-Sk-lOa"/>
+                        <outlet property="happyImage" destination="uZM-TG-8CA" id="RjL-Oq-wTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBM-hW-bKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512" y="-353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Clh-k4-L04">
@@ -120,14 +218,19 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg3-pe-20y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mBD-35-J33">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
             <point key="canvasLocation" x="252" y="-353"/>
         </scene>
     </scenes>
     <resources>
-        <image name="castleBackground" width="568" height="470"/>
-        <image name="cityBackground" width="568" height="470"/>
-        <image name="funBackground" width="568" height="470"/>
-        <image name="redBackground" width="512" height="384"/>
+        <image name="camera" width="32" height="24"/>
+        <image name="castle_thumb" width="200" height="100"/>
+        <image name="city_thumb" width="200" height="100"/>
+        <image name="fun_thumb" width="200" height="100"/>
+        <image name="red_thumb" width="200" height="100"/>
     </resources>
 </document>

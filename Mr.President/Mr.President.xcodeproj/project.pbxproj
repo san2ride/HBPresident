@@ -12,7 +12,9 @@
 		A474DDE81D380B780058D973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A474DDE71D380B780058D973 /* Assets.xcassets */; };
 		A474DDEB1D380B780058D973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A474DDE91D380B780058D973 /* LaunchScreen.storyboard */; };
 		A474DDF71D380E870058D973 /* BGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474DDF61D380E870058D973 /* BGViewController.swift */; };
-		A474DDF91D383FD20058D973 /* HappyBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474DDF81D383FD20058D973 /* HappyBirthdayViewController.swift */; };
+		A474DDFD1D39429E0058D973 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474DDFC1D39429E0058D973 /* CameraViewController.swift */; };
+		A474DDFF1D396C3C0058D973 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474DDFE1D396C3C0058D973 /* BirthdayViewController.swift */; };
+		A4F41CAB1D3A00CB00314BCF /* mmHbMrPresident.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4F41CAA1D3A00CB00314BCF /* mmHbMrPresident.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		A474DDEA1D380B780058D973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A474DDEC1D380B780058D973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A474DDF61D380E870058D973 /* BGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGViewController.swift; sourceTree = "<group>"; };
-		A474DDF81D383FD20058D973 /* HappyBirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappyBirthdayViewController.swift; sourceTree = "<group>"; };
+		A474DDFC1D39429E0058D973 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A474DDFE1D396C3C0058D973 /* BirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		A4F41CAA1D3A00CB00314BCF /* mmHbMrPresident.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mmHbMrPresident.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				A474DDF61D380E870058D973 /* BGViewController.swift */,
-				A474DDF81D383FD20058D973 /* HappyBirthdayViewController.swift */,
+				A474DDFC1D39429E0058D973 /* CameraViewController.swift */,
+				A474DDFE1D396C3C0058D973 /* BirthdayViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			children = (
 				A474DDE01D380B770058D973 /* AppDelegate.swift */,
 				A474DDE71D380B780058D973 /* Assets.xcassets */,
+				A4F41CAA1D3A00CB00314BCF /* mmHbMrPresident.mp3 */,
 				A474DDE91D380B780058D973 /* LaunchScreen.storyboard */,
 				A474DDEC1D380B780058D973 /* Info.plist */,
 			);
@@ -131,6 +137,7 @@
 				TargetAttributes = {
 					A474DDDC1D380B770058D973 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7QLQZLZHA6;
 					};
 				};
 			};
@@ -159,6 +166,7 @@
 			files = (
 				A474DDEB1D380B780058D973 /* LaunchScreen.storyboard in Resources */,
 				A474DDE81D380B780058D973 /* Assets.xcassets in Resources */,
+				A4F41CAB1D3A00CB00314BCF /* mmHbMrPresident.mp3 in Resources */,
 				A474DDE61D380B780058D973 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,8 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A474DDFF1D396C3C0058D973 /* BirthdayViewController.swift in Sources */,
 				A474DDF71D380E870058D973 /* BGViewController.swift in Sources */,
-				A474DDF91D383FD20058D973 /* HappyBirthdayViewController.swift in Sources */,
+				A474DDFD1D39429E0058D973 /* CameraViewController.swift in Sources */,
 				A474DDE11D380B770058D973 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Mr.President/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Mr-President";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -296,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Mr.President/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Mr-President";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -322,6 +337,7 @@
 				A474DDF11D380B780058D973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

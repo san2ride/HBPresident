@@ -21,43 +21,36 @@ class BGViewController: UIViewController {
     
     @IBAction func firstButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "cityBackground")
-        self.performSegueWithIdentifier("BirthdaySegue", sender: nil)
+        self.selectedBackGroundImage = UIImage(named: "city_thumb")
+        self.performSegueWithIdentifier("CameraSegue", sender: nil)
         
     }
     
     @IBAction func secondButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "castleBackground")
-        self.performSegueWithIdentifier("BirthdaySegue", sender: nil)
+        self.selectedBackGroundImage = UIImage(named: "castle_thumb")
+        self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
     
     @IBAction func thirdButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "funBackground")
-        self.performSegueWithIdentifier("BirthdaySegue", sender: nil)
+        self.selectedBackGroundImage = UIImage(named: "fun_thumb")
+        self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
     
     @IBAction func fourthButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "redBackground")
-        self.performSegueWithIdentifier("BirthdaySegue", sender: nil)
+        self.selectedBackGroundImage = UIImage(named: "red_thumb")
+        self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let controller = segue.destinationViewController as? HappyBirthdayViewController
+        let controller = segue.destinationViewController as? CameraViewController
         
         controller?.recieveImage = self.selectedBackGroundImage
         
-        
     }
-
-    
-    
-
-    
-    
 
     
 }

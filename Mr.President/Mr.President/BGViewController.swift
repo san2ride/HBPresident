@@ -21,26 +21,26 @@ class BGViewController: UIViewController {
     
     @IBAction func firstButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "city_thumb")
+        self.selectedBackGroundImage = UIImage(named: "m4.medium")
         self.performSegueWithIdentifier("CameraSegue", sender: nil)
         
     }
     
     @IBAction func secondButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "castle_thumb")
+        self.selectedBackGroundImage = UIImage(named: "m1")
         self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
     
     @IBAction func thirdButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "fun_thumb")
+        self.selectedBackGroundImage = UIImage(named: "m3")
         self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
     
     @IBAction func fourthButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "red_thumb")
+        self.selectedBackGroundImage = UIImage(named: "m2")
         self.performSegueWithIdentifier("CameraSegue", sender: nil)
     }
   

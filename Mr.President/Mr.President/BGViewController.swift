@@ -21,7 +21,7 @@ class BGViewController: UIViewController {
     
     @IBAction func firstButton(sender: AnyObject) {
         
-        self.selectedBackGroundImage = UIImage(named: "m4.medium")
+        self.selectedBackGroundImage = UIImage(named: "m8")
         self.performSegueWithIdentifier("CameraSegue", sender: nil)
         
     }

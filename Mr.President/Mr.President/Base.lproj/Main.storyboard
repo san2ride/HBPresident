@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" constant="88" id="bTO-UA-oyu"/>
                                     <constraint firstAttribute="height" constant="80" id="pkX-bl-lrV"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="m4.medium"/>
+                                <state key="normal" backgroundImage="m8"/>
                                 <connections>
                                     <action selector="firstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBm-oP-EhK"/>
                                 </connections>
@@ -200,6 +200,13 @@
                                     <constraint firstAttribute="width" constant="135" id="wvy-wD-CXK"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vYF-iV-a8k">
+                                <rect key="frame" x="440" y="396" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="pds-i7-eXP"/>
+                                    <constraint firstAttribute="height" constant="140" id="xmj-jz-uw2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -207,13 +214,16 @@
                             <constraint firstItem="uZM-TG-8CA" firstAttribute="leading" secondItem="iwo-3U-nec" secondAttribute="leading" constant="40" id="4VE-Sp-XT3"/>
                             <constraint firstItem="loQ-rD-SYn" firstAttribute="leading" secondItem="iwo-3U-nec" secondAttribute="leading" id="6I0-Yd-D34"/>
                             <constraint firstItem="loQ-rD-SYn" firstAttribute="top" secondItem="trp-86-sgh" secondAttribute="bottom" id="X96-lQ-ccP"/>
+                            <constraint firstItem="az2-R2-Ua3" firstAttribute="top" secondItem="vYF-iV-a8k" secondAttribute="bottom" constant="20" id="mdj-jf-pj8"/>
                             <constraint firstAttribute="trailing" secondItem="loQ-rD-SYn" secondAttribute="trailing" id="nuM-vk-E9d"/>
                             <constraint firstItem="az2-R2-Ua3" firstAttribute="top" secondItem="loQ-rD-SYn" secondAttribute="bottom" id="yMr-i8-onN"/>
+                            <constraint firstAttribute="trailing" secondItem="vYF-iV-a8k" secondAttribute="trailing" constant="20" id="zQI-OO-vih"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Lae-Dw-apd"/>
                     <connections>
+                        <outlet property="animateView" destination="vYF-iV-a8k" id="yKM-be-Oo7"/>
                         <outlet property="birthdayImage" destination="loQ-rD-SYn" id="i0j-Sk-lOa"/>
                         <outlet property="happyImage" destination="uZM-TG-8CA" id="RjL-Oq-wTA"/>
                     </connections>
@@ -255,8 +265,8 @@
         <image name="m1" width="140" height="182"/>
         <image name="m2" width="100" height="100"/>
         <image name="m3" width="100" height="100"/>
-        <image name="m4.medium" width="316" height="246"/>
         <image name="m6" width="412" height="512"/>
         <image name="m7" width="375" height="320"/>
+        <image name="m8" width="316" height="246"/>
     </resources>
 </document>
